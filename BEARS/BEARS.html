@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEARS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script>
+        window.onload = function() {
+            fetch('BEARS.txt')
+            .then(response => response.text())
+            .then(data => {
+                const urls = data.split('\n');
+                const grid = document.querySelector('.grid');
+                urls.forEach(url => {
+                    const streamDiv = document.createElement('div');
+                    streamDiv.classList.add('stream');
+                    const iframe = document.createElement('iframe');
+                    iframe.src = url.trim();
+                    iframe.setAttribute('frameborder', '0');
+                    iframe.setAttribute('allowfullscreen', '');
+                    streamDiv.appendChild(iframe);
+                    grid.appendChild(streamDiv);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching the txt file:', error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="grid">
+        <!-- Streams will be appended here dynamically -->
+    </div>
+</body>
+</html>

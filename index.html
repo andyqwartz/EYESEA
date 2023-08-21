@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles-main.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <!-- Applied the title-color-change class here -->
+        <h1 class="title-color-change" onclick="addNewRssFeed()">Serendippo</h1>
+        <div class="nav">
+            <a href="#home" onclick="showPage('home')">Accueil</a>
+            <a href="#about" onclick="showPage('about')">À Propos</a>
+            <a href="#contact" onclick="showPage('contact')">Contact</a>
+        </div>
+    </div>
+    <div class="grid">
+        <!-- Category: BIRDS -->
+        <div class="category">
+            <div class="stream">
+                <iframe src="https://www.youtube.com/embed/bt1m1VKO16s" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="BIRDS.html">BIRDS</a>
+        </div>
+
+        <!-- Category: BEARS -->
+        <div class="category">
+            <div class="stream">
+                <iframe src="https://www.youtube.com/embed/HsLvnFQW_yM" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="BEARS.html">BEARS</a>
+        </div>
+
+        <!-- Category: WORLD -->
+        <div class="category">
+            <div class="stream">
+                <iframe src="https://www.youtube.com/embed/xAieE-QtOeM" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="WORLD.html">WORLD</a>
+        </div>
+
+        <!-- Category: JAPAN -->
+        <div class="category">
+            <div class="stream">
+                <iframe src="https://www.youtube.com/embed/Sv9hcJ3k5h4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="JAPAN.html">JAPAN</a>
+        </div>
+
+        <!-- Category: NYC -->
+        <div class="category">
+            <div class="stream">
+                <iframe src="https://www.youtube.com/embed/vsfEE30aiis" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="NYC.html">NYC</a>
+        </div>
+
+        <!-- Category: TRAINS -->
+        <div class="category">
+            <div class="stream">
+                <iframe src="https://www.youtube.com/embed/z4V0lvM1mdo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="TRAINS.html">TRAINS</a>
+        </div>
+
+        <!-- Category: AQUA -->
+        <div class="category">
+            <div class="stream">
+                <iframe src="https://www.youtube.com/embed/OMlf71t2oV0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="AQUA.html">AQUA</a>
+        </div>
+
+        <!-- Category: SPECIAL -->
+        <div class="category">
+            <div class="stream">
+                <iframe src="https://www.youtube.com/embed/8_lOY_z2ojs" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="SPECIAL.html">SPECIAL</a>
+        </div>
+     
+    </div>
+    <div class="footer">&copy; 2023 Serendippo. Tous droits réservés.</div>
+
+    <div class="toast"></div>
+    <div class="loading-spinner"></div>
+</body>
+</html>
